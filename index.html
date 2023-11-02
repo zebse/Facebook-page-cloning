@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Facebook - Frontend challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="left">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="search">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search ...">
+            </div>
+
+            <div class="user" onclick="menuToggle()">
+                <img src="images/profile-pic.png" alt="">
+                <small><i class="fa-solid fa-chevron-down" style="color: #ddd;"></i></small>
+            </div>
+        </div>
+
+        <div class="setting">
+            <div class="setting-inner">
+                <div class="user-post">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Kebede Assefa</p>
+                        <a href="">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="user-post">
+                    <img src="images/help.png" alt="">
+                    <div>
+                        <p>Help and Support</p>
+                        <a href="">Looking for a help?</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-link">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="">Settings</a>
+                </div>
+
+                <div class="setting-link">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="">Dsiplay setting</a>
+                </div>
+
+                <div class="setting-link">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of nav -->
+
+    <div class="container">
+        <!-- Left side bar -->
+        <div class="leftbar">
+            <div class="links">
+                <a href="#"><img src="images/news.png" alt=""> Latest news</a>
+                <a href="#"><img src="images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="images/group.png" alt=""> Group</a>
+                <a href="#"><img src="images/watch.png" alt=""> Videos</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut">
+                <p>Shortcuts</p>
+                <a href="#"><img src="images/developer.png" alt=""> Frontend Developers</a>
+                <a href="#"><img src="images/shortcut-1.png" alt=""> Content Creators</a>
+                <a href="#"><img src="images/shortcut-2.png" alt=""> Digital Market</a>
+                <a href="#"><img src="images/shortcut-4.png" alt=""> Graphic Designers</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="story-list">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>Post your story</p>
+                </div>
+
+                <div class="story pic1">
+                    <img src="images/member-1.png" alt="">
+                    <p>Ahmed</p>
+                </div>
+
+                <div class="story pic2">
+                    <img src="images/member-2.png" alt="">
+                    <p>Man United</p>
+                </div>
+
+                <div class="story pic3">
+                    <img src="images/member-3.png" alt="">
+                    <p>Ethiopia</p>
+                </div>
+
+                <div class="story pic4">
+                    <img src="images/member-4.png" alt="">
+                    <p>Supersport</p>
+                </div>
+            </div>
+
+            <div class="post-sec">
+                <div class="user-post">
+                    <img src="images/photo1.png" alt="">
+                    <div>
+                        <p>Alemu Mandefrot</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-cont">
+                    <textarea rows="2" placeholder="What is on your mind, Zebse?"></textarea>
+                    <div class="post-link">
+                        <a href=""><img src="images/live-video.png" alt="">Video</a>
+                        <a href=""><img src="images/photo.png" alt="">Photo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-post">
+                <div class="post-attr">
+                    <div class="user-post">
+                        <img src="images/photo1.png" alt="">
+                        <div>
+                            <p>Alemu Mandefrot</p>
+                            <span>Sep 20, 2023</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text"><span>Gateway ICT Consult and Advisor PLC</span> gives different trainings and
+                    tutorials.
+                    For mor <a href="gateway2ict.com">Contact us.</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img">
+                <div class="post-attr">
+                    <div class="like">
+                        <div><img src="images/like-blue.png" alt="">420</div>
+                        <div><img src="images/comments.png" alt="">87</div>
+                        <div><img src="images/share.png" alt="">111</div>
+                    </div>
+
+                    <div class="user-fee">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-post">
+                <div class="post-attr">
+                    <div class="user-post">
+                        <img src="images/photo3.png" alt="">
+                        <div>
+                            <p>Kebede Assefa</p>
+                            <span>Sep 20, 2022</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">I've visited the coolest place in the world <span>Afar</span> with my friends. it's
+                    the origin of human being.
+                </p>
+                <img src="images/feed-image-3.png" class="post-img">
+                <div class="post-attr">
+                    <div class="like">
+                        <div><img src="images/like-blue.png" alt="">300</div>
+                        <div><img src="images/comments.png" alt="">55</div>
+                        <div><img src="images/share.png" alt="">44</div>
+                    </div>
+
+                    <div class="user-fee">
+                        <img src="images/photo3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-post">
+                <div class="post-attr">
+                    <div class="user-post">
+                        <div>
+                            <p>Advertisment</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, accusamus.
+                    For mor <a href="gateway2ict2.com">Check my gallary.</a>
+                </p>
+                <img src="images/advertisement.png" class="post-img">
+            </div>
+
+            <div class="main-post">
+                <div class="post-attr">
+                    <div class="user-post">
+                        <img src="images/photo5.png" alt="">
+                        <div>
+                            <p>Orit Kebede</p>
+                            <span>Nov 20, 2023</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, accusamus.
+                    For mor <a href="gateway2ict2.com">Check my gallary.</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+                <div class="post-attr">
+                    <div class="like">
+                        <div><img src="images/like-blue.png" alt="">212</div>
+                        <div><img src="images/comments.png" alt="">48</div>
+                        <div><img src="images/share.png" alt="">111</div>
+                    </div>
+
+                    <div class="user-fee">
+                        <img src="images/photo5.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main-post">
+                <div class="post-attr">
+                    <div class="user-post">
+                        <img src="images/photo4.png" alt="">
+                        <div>
+                            <p>Manchester United</p>
+                            <span>May 20, 1999</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">Manchester United won the <span>UEFA Champions League</span> of 1999 by beat
+                    <span>Bayern Munchin</span>. it's one of the greatest comebacks in the final.
+                </p>
+                <img src="images/feed-image-2.png" class="post-img">
+                <div class="post-attr">
+                    <div class="like">
+                        <div><img src="images/like-blue.png" alt="">1.5k</div>
+                        <div><img src="images/comments.png" alt="">600</div>
+                        <div><img src="images/share.png" alt="">550</div>
+                    </div>
+
+                    <div class="user-fee">
+                        <img src="images/photo4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right side bar -->
+        <div class="rightbar">
+            <div class="title">
+                <h4>Contacts</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="user-list">
+                <div class="online">
+                    <img src="images/profile-pic.png" />
+                </div>
+                <p>Almaz Lomm</p>
+            </div>
+
+            <div class="user-list">
+                <div class="online">
+                    <img src="images/status-1.png" />
+                </div>
+                <p>Esat Z nation</p>
+            </div>
+
+            <div class="user-list">
+                <div class="online">
+                    <img src="images/photo5.png" />
+                </div>
+                <p>Abera Dessalegn</p>
+            </div>
+
+            <div class="user-list">
+                <div class="online">
+                    <img src="images/photo2.png" />
+                </div>
+                <p>John Mathew</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright <a href="https://github.com/zebse">Kebede Assefa</a>. All rights reserved!</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
